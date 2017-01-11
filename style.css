@@ -1,0 +1,309 @@
+*{ margin: 0; padding: 0; line-height: 1;}
+a{text-decoration: none;}
+ul{list-style: none;}
+img{border: none;}
+
+html,body { height:100%;}
+
+
+
+.title {
+    color:cornflowerblue;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 50px;
+/*
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Comfortaa', cursive;
+*/
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top:0;
+    border-bottom: 3px solid #fff;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 5;
+}
+
+nav .menu {
+    margin: 0 auto;
+    text-align: center;
+    width:600px;
+    height: 40px;
+    z-index: 6;
+}
+
+nav .menu li{
+    float:left;
+    float:left;
+    margin-right: 50px;
+    line-height: 40px;
+    height: 40px;
+}
+nav .menu li:last-child{margin-right: 0;}
+
+nav .menu li a{
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px #fff;
+}
+
+nav .menu li a:hover{ color: darkorange;}
+
+
+
+/*main*/
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(img/mainImg.jpg);    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main h1 {
+    text-align: center;
+    color: #fff;
+    padding-top: 20%;
+    font-size: 100px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+/*about*/
+.about{
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(img/contactImg.jpg);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+.about h3 {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 55%;
+}
+
+/*skill*/
+
+.skill{
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(img/skillImg.jpg);    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.skill ul{width: 70%;height: 500px; margin: 0 auto; margin-top: 200px;
+background-color: rgba(254,254,254,0.5);padding-top: 50px;}
+
+.skill ul li h2{ text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.skill ul li h3{
+    text-align: center;
+    color: dodgerblue;
+}
+
+.skill ul li{
+    float:left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.skill ul li img{width:100px;}
+
+
+
+
+
+/********************* Port *********************/
+
+.port{
+    width:100%;
+    height: 150%;
+    margin : 0 auto;
+    background-color: aliceblue;
+/*
+    background-image: url(img/portImg.jpg);    
+    background-repeat: no-repeat;
+    background-position:0px 0px;
+    background-size: cover;
+*/
+}
+
+.port ul{
+    width:90%; 
+/*    width:2560px;*/
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.port ul li {
+    float:left;
+    margin: 10px;
+    width:15%; 
+    height: auto;
+    position:relative;
+    text-align: center;
+    overflow: hidden;
+    border:1px solid #dadada;
+    box-sizing: border-box;
+}
+
+.port ul li a{
+    display: block;
+    text-align: center;
+    width:100%; height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center 0px;
+    transition: all 0.5s;
+}
+
+    
+.port ul li a h3{    
+    position:absolute;
+    text-align: center;
+    top:-15%;
+    width:100%;
+    height: auto;
+    display: block;
+    transition:all 0.5s;
+}
+
+.port ul li a:hover h3{
+    position : absolute;
+    width:100%;
+    display: block;
+    height: 200px;
+    top:45%;
+    opacity: 1;
+    text-align: center;
+}
+
+.port ul li a h4{    
+    position:absolute;
+    text-align: center;
+    top:-15%;
+    width:100%;
+    height: auto;
+    display: block;
+    transition:all 0.5s;
+}
+
+.port ul li a:hover h4{
+    position : absolute;
+    width:100%;
+    display: block;
+    height: 200px;
+    top:60%;
+    opacity: 1;
+    text-align: center;
+}
+
+
+
+.port .bg h3{text-align: center; color: #fff;}
+.port .bg h4{text-align: center; color: #fff;}
+
+.port ul li a .bg{
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0);
+    position:absolute;
+    top:0; left: 0;
+    transition: all 0.5s;
+}
+
+.port ul li a .bg:hover{ background-color: rgba(0,0,0,0.7);}
+
+
+
+
+
+
+/* 포트폴리오 썸네일 <a> background-image */
+.port ul li:nth-child(1) a {background-image: url(img/samyang.png);}
+.port ul li:nth-child(2) a {background-image: url(img/delmonte.png);}
+.port ul li:nth-child(3) a {background-image: url(img/fp.png);}
+.port ul li:nth-child(4) a {background-image: url(img/kip.png);}
+.port ul li:nth-child(5) a {background-image: url(img/zishen.png);}
+.port ul li:nth-child(6) a {background-image: url(img/wella.png);}
+.port ul li:nth-child(7) a {background-image: url(img/descente.png);}
+.port ul li:nth-child(8) a {background-image: url(img/hanKorea.png);}
+.port ul li:nth-child(9) a {background-image: url(img/miro.png);}
+.port ul li:nth-child(10) a {background-image: url(img/ekMall.png);}
+.port ul li:nth-child(11) a {background-image: url(img/EBSlang.png);}
+.port ul li:nth-child(12) a {background-image: url(img/homeplus.png);}
+.port ul li:nth-child(13) a {background-image: url(img/vanadis.png);}
+.port ul li:nth-child(14) a {background-image: url(img/tngt.png);background-size: cover; background-position: center;}
+.port ul li:nth-child(15) a {background-image: url(img/imed.png);}
+.port ul li:nth-child(16) a {height: 135px;background-image: url(img/maldives.png);}
+.port ul li:nth-child(17) a {height: 135px;background-image: url(img/dealim01.png); background-size:cover; background-position: center;}
+.port ul li:nth-child(18) a {height: 135px;background-image: url(img/naverBand.png); background-size: cover;}
+
+
+
+
+
+/*contact*/
+.contact{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(img/aboutImg.jpg);    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.contact .contactDiv{
+    width: 30%;
+    height: 70%;
+    background-color: rgba(255,255,255,0.6);
+    position : relative;
+    float: right;
+    margin-top: 50px;
+    margin-right: 5%;
+    border:3px solid #999;
+    border-radius: 15px 15px;
+    
+}
+.contact ul{
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+
+}
+.contact ul li{
+    float:left;
+    margin-right: 20px;
+}
+
+.contact ul li img{
+    width: 40px;
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px) {  }
+@media screen and (min-width:780px) and (max-width:1023px) {  }
+@media screen and (min-width:640px) and (max-width:779px) {  }
+@media screen and (min-width:480px) and (max-width:639px) {  }
