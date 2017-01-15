@@ -110,7 +110,7 @@ nav .menu li a:hover{ color: darkorange;}
     background-size: cover;
 }
 
-.skill ul{width: 70%;height: 500px; margin: 0 auto; margin-top: 200px;
+.skill ul{width: 70%;height: 500px; margin: 0 auto;
 background-color: rgba(254,254,254,0.5);padding-top: 50px;}
 
 .skill ul li h2{ text-align: center;
